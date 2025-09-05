@@ -1,63 +1,28 @@
-# Ubuntu Image Fetcher
+# Ubuntu_Requests
 
-A Python tool for downloading images from URLs, inspired by Ubuntu philosophy: *"I am because we are"*
+## Ubuntu Image Fetcher
 
-## Features
+This tool allows you to download images from the web in a safe and community-minded way.
 
-- Download single or multiple images
-- Automatic duplicate detection
-- Safe filename handling
-- Content validation
-- Collection statistics
+### How to Use
 
-## Installation
+1. Run the script:
+	```bash
+    windows
+    python ubuntu_image_fetcher.py
 
-```bash
-git clone https://github.com/yourusername/Ubuntu_Requests.git
-cd Ubuntu_Requests
-pip install requests
-```
+    linux
+	python3 ubuntu_image_fetcher.py
+	```
+2. Enter one or more image URLs, separated by commas, when prompted.
+3. The images will be saved in the `Fetched_Images` folder.
 
-## Usage
+**Features:**
+- Handles multiple URLs at once
+- Checks for duplicate images
+- Warns about untrusted sources
+- Only saves valid image files
 
-```bash
-python ubuntu_image_fetcher.py
-```
-
-Follow the interactive menu to:
-1. Enter image URLs (single, multiple, or from file)
-2. View your collection stats
-3. Force download duplicates
-
-## Example
-
-```
-Welcome to the Ubuntu Image Fetcher
-Please enter the image URL: https://example.com/image.jpg
-✓ Successfully fetched: image.jpg
-✓ Image saved to Fetched_Images/image.jpg
-
-Connection strengthened. Community enriched.
-```
-
-## Requirements
-
-- Python 3.6+
-- requests library
-
-## File Structure
-
-```
-Ubuntu_Requests/
-├── ubuntu_image_fetcher.py    # Main script
-├── Fetched_Images/            # Downloaded images
-└── README.md                  # This file
-```
-
-## Ubuntu Philosophy
-
-This tool embodies Ubuntu principles:
-- **Community**: Connects to the global web
-- **Respect**: Handles errors gracefully
-- **Sharing**: Organizes images for later use
-- **Practicality**: Solves real needs safely
+**Requirements:**
+- Python 3
+- `requests` library (install with `pip install requests`)
